@@ -49,14 +49,14 @@ hr {
 }
 
 main {
-    margin-inline: 45px;
+    margin-inline: 2%;
 }
 
 /* H O M E P A G E*/
 
 #filters {
     padding: 25px 20px 10px;
-    font-size: 30px;
+    font-size: 190%;
 
 #player-filter {
     -webkit-appearance: none;
