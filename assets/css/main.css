@@ -1,0 +1,80 @@
+:root {
+    --blue: #80BFFF;
+    --red: #E67878;
+    --green: #9FD19B;
+    --grey: #D9D9D9;
+    --beige: #F7F7EE;
+    --darkbeige: #E5E5D3;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--beige);
+}
+
+/* F O N T S */
+
+.header-font {
+    font-family: "Belanosima", sans-serif;
+    font-weight: bold;
+}
+
+.subheader-font{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-weight: bold;
+}
+
+.paragraph-font {
+    font-family: "Nunito", sans-serif;
+}
+
+.beige-font{
+    color: var(--beige);
+}
+
+.grey-font{
+    color: var(--grey);
+}
+ 
+/* U N I V E R S A L */
+header {
+    padding: 15px 25px;
+    background-color: var(--blue);
+    font-size: 40px;
+}
+
+hr {
+    border-top: 5px dashed var(--red);
+}
+
+main {
+    margin-inline: 45px;
+}
+
+/* H O M E P A G E*/
+
+#filters {
+    padding: 25px 20px 10px;
+    font-size: 30px;
+
+#player-filter {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+    
+    width: 100px;
+    height: 37px;
+    vertical-align: text-top;
+    background: var(--darkbeige);
+}
+
+#player-filter::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+
+    width: 40px; 
+    height: 30px;
+    background: var(--green);
+}
