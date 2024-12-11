@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Belanosima:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>games4everyone</title>
+      <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/filters.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+   </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Belanosima:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+   <body>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>games4everyone</title>
-  <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-</head>
+      <!-- H E A D E R -->
+      <div id="header-placeholder"></div>
 
-<body>
-<!--H E A D E R-->
-  <header class="header-font beige-font">GAME<span style="color:var(--red)">4</span>ALL</header>
-  
-  <main>
-    <!--F I L T E R S-->
-    <div id="filters" class="subheader-font grey-font">
-        <input id="player-filter" type="range" min="0" max="2" value="0">
-        <label for="player-filter"><span id="player-filter-label"></span> Players</label>
-    </div>
-    <hr>
-    <!--G A M E S-->
+      <main>
+         <!-- F I L T E R S -->
+         <nav id="filters" class="subheader-font medium-font grey-font">
+            <!-- player count -->
+            <input id="player-filter" type="range" min="0" max="2" value="0">
+            <label for="player-filter"><span id="player-filter-label"></span> Players</label>
+         </nav>
+         <hr>
 
-  </main>
-  <script src="assets/js/slider.jsx"></script>
-  
-</body>
-
+         <!-- G A M E S -->
+         <section id="game-grid"">
+            <!-- game grid -->
+         </section>
+         
+      </main>
+      <script src="assets/frontend/slider.jsx"></script>
+      <script src="assets/frontend/incompatible.js"></script>
+      <script src="assets/frontend/header.js"></script>
+   </body>
 </html>
