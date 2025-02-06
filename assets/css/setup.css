@@ -1,0 +1,8 @@
+main{
+    margin-top: var(--med);
+    font-weight: 700;
+}
+.instruction {
+    padding: var(--med) var(--large);
+    gap: var(--large);
+}

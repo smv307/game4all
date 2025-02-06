@@ -1,0 +1,117 @@
+:root {
+    --blue: #80BFFF;
+    --red: #E67878;
+    --green: #9FD19B;
+    --grey: #D9D9D9;
+    --beige: #F7F7EE;
+    --darkbeige: #E5E5D3;
+
+    --xsmall: 2rem;
+    --small: 3rem;
+    --med: 5rem;
+    --large: 10rem;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--beige);
+    font-size: 16px; /* base font size */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* T E X T */ 
+
+/* fonts */
+
+.header-font {
+    font-family: "Belanosima", sans-serif;
+    font-weight: bold;
+}
+
+.subheader-font{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-weight: bold;
+}
+
+.paragraph-font {
+    font-family: "Nunito", sans-serif;
+}
+
+/* colors */
+
+.beige-font{
+    color: var(--beige);
+}
+
+.blue-font{
+    color: var(--blue);
+}
+.grey-font{
+    color: var(--grey);
+}
+
+.red-font{
+    color: var(--red);
+}
+
+.green-font{
+    color: var(--green);   
+}
+
+/* sizes */
+
+.extra-big-font {
+    font-size: 3rem;
+}
+
+.big-font {
+    font-size: 2.5rem;
+}
+
+.less-big-font{
+    font-size: 2rem;
+}
+
+.medium-font {
+    font-size: 1.875rem;
+}
+
+.little-font {
+    font-size: 1.563rem;
+}
+
+/* F O R M A T */
+
+.nextdoor-parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nextdoor-child{
+    flex: 1;
+}
+
+.centered{
+    margin: auto;
+    align-items: center;
+}
+
+/* U N I V E R S A L */
+
+hr {
+    border-top: 4px dashed var(--red);
+    border-bottom: 0;
+}
+
+main {
+    margin-inline: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Belanosima:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>game4all</title>
+      <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/filters.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/game-grid.css" rel="stylesheet" type="text/css" />
+   </head>
+
+   <body>
+
+      <!-- H E A D E R -->
+      <div id="header-placeholder"></div>
+
+      <main>
+         <!-- F I L T E R S -->
+         <nav id="filters" class="subheader-font medium-font grey-font">
+            <!-- player count -->
+            <input id="player-filter" type="range" min="0" max="2" value="0">
+            <label for="player-filter"><span id="player-filter-label"></span> Players</label>
+         </nav>
+         <hr>
+
+         <!-- G A M E S -->
+         <div class="grid-container" id="game-grid"></div>
+         <p class="subheader-font small-font green-font">game ideas? submit them <span class="blue-font" style="text-decoration: underline;"><a>here</a></span></p>
+      </main>
+
+      <script src="assets/frontend/slider.jsx"></script>
+      <script src="assets/frontend/incompatible.js"></script>
+      <script src="assets/frontend/header.js"></script>
+      <script src="assets/frontend/game-display.jsx"></script>
+   </body>
+</html>

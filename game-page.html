@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Belanosima:wght@400;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game4all</title>
+
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <style>
+        #back-arrow {
+            position: absolute;
+            top: 160px;
+            left: 60px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        main {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- H E A D E R -->
+    <div id="header-placeholder"></div>   
+
+    <!-- back arrow -->
+    <div id="back-arrow" onclick="window.history.back()"><img src="images/back-arrow.png"></div>
+
+    <!-- game -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameScript = urlParams.get("game");
+        console.log("Decoded Game URL:", gameScript);
+
+        if (gameScript) {
+            const scriptElement = document.createElement("script");
+            scriptElement.src = gameScript;
+            document.body.appendChild(scriptElement);
+        } else {
+            document.body.innerHTML += "<p>Error: No game selected</p>";
+        }
+    </script>
+    <script src="assets/frontend/header.js"></script>
+
+</body>
+</html>

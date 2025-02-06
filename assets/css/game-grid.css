@@ -1,0 +1,17 @@
+.grid-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 50px;
+  justify-content: center;
+}
+
+.game-card {
+  padding: 10px;
+}
+
+.game-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
