@@ -5,25 +5,25 @@ document.addEventListener("DOMContentLoaded", function () {
         "games": [
             {
                 "title": "Rabbit Race",
-                "img": "../images/thumbnails/rabbit-race.png",
+                "img": "images/thumbnails/rabbit-race.png",
                 "url": "games/rabbit-race/rabbit-race.js",
                 "desc": "Purple Rabbit: 1, Red Rabbit: 2"
             },
             {
                 "title": "Yarn Toss",
-                "img": "../images/thumbnails/yarn-toss.png",
+                "img": "images/thumbnails/yarn-toss.png",
                 "url": "games/yarn-toss/yarn-toss.js",
                 "desc": "Purple Rabbit: 1, Red Rabbit: 2"
             },
             {
                 "title": "Trace",
-                "img": "../images/thumbnails/trace.png",
+                "img": "images/thumbnails/trace.png",
                 "url": "games/trace/trace.js",
                 "desc": "Right: 1, Up: 2"
             },
             {
                 "title": "Capybara Orange",
-                "img": "../images/thumbnails/capybara-orange.png",
+                "img": "images/thumbnails/capybara-orange.png",
                 "url": "games/capybara-orange/capybara-orange.js"
             }
         ]
